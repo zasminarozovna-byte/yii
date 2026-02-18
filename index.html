@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Gold - Заманауи Технологиялар</title>
+    <style>
+        /* Негізгі стильдер */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f0f0f; /* Күңгірт фон */
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 80%;
+            z-index: 1000;
+        }
+
+        .logo-box {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FFD700; /* Алтын түс */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Hero Section (Басты бөлім) */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* Технологиялық стильдегі сурет фон ретінде */
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #FFD700, #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+
+        /* Интерактивті батырма */
+        .cta-button {
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+            background-color: #FFD700;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: scale(1.1);
+            background-color: #fff;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+        }
+
+        .menu-dots {
+            cursor: pointer;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-box">Tech Gold</div>
+        <div class="menu-dots">☰</div>
+    </header>
+
+    <section class="hero">
+        <h1>Tech Gold</h1>
+        <p>Сапа мен технология үйлескен жер</p>
+        <a href="#" class="cta-button">Тапсырыс беру</a>
+    </section>
+
+</body>
+</html>
